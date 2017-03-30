@@ -23,7 +23,11 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-require 'ecraft/extensions/core' # To load _all_ core extensions. Use with care, since this could cause conflicts with other libraries.
+ # To load _all_ core extensions. Use with care, since this could cause conflicts with other libraries.
+require 'ecraft/extensions/core_ext'
+
+# To load a specific extension:
+require 'ecraft/extensions/core_ext/bigdecimal'
 ```
 
 ## Development
