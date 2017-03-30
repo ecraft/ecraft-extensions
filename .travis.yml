@@ -1,0 +1,16 @@
+sudo: false
+language: ruby
+
+# Dummy version to avoid wasting time on RVM installs.
+rvm: 1.9.3
+
+env:
+ - "JRUBY_OPTS=--debug"
+
+before_install:
+ - rm -rf ~/.rvm && if [ ! -d "$HOME/jruby-bin" ]; then mkdir -p ~/jruby-bin && pushd ~/jruby-bin && curl -o- -L https://s3.amazonaws.com/jruby.org/downloads/9.1.8.0/jruby-bin-9.1.8.0.tar.gz | tar xzf - --strip-components=1 && popd ; fi
+ - export PATH="$HOME/jruby-bin/bin:$PATH"
+ - gem install bundler
+ - gem update --system
+
+cache: bundler
