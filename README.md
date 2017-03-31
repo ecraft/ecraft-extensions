@@ -42,7 +42,7 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/ecraft
 1. Update the `lib/ecraft/extensions/version.rb` file with the new version number.
 1. `git release v<version>` (replace with the version number you specified above, with v prefix.)
 1. `git push fury master`
-1. Go to the [Releases](https://github.com/ecraft/ecraft-extensions/releases) page and add the changelog. Use [changelog-rs](https://github.com/perlun/changelog-rs)for generating it.
+1. Go to the [Releases](https://github.com/ecraft/ecraft-extensions/releases) page and add the changelog. Use [changelog-rs](https://github.com/perlun/changelog-rs) for generating it.
 
 ### Documentation
 
