@@ -1,5 +1,3 @@
-inherit_from: .rubocop_todo.yml
-
 AllCops:
   TargetRubyVersion: 2.3
   DisplayCopNames: true
@@ -18,6 +16,11 @@ Metrics/MethodLength:
 # Rationale: allow Weirich-style blocks
 Style/BlockDelimiters:
   Enabled: false
+
+# Needed since core extensions might get included from `module_eval` contexts.
+Style/ClassAndModuleChildren:
+  Enabled: false
+
 Style/Documentation:
   Enabled: false
 Style/Encoding:

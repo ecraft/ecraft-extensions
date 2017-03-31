@@ -1,6 +1,6 @@
 require 'json'
 
-require 'ecraft/extensions/core_ext/big_decimal'
+require 'ecraft/extensions/core_ext/bigdecimal'
 
 describe BigDecimal do
   describe '#to_json' do
