@@ -1,0 +1,1 @@
+require 'ecraft/extensions/version'
