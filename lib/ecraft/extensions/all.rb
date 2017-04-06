@@ -3,3 +3,5 @@
 # potentially cause conflicts with other libraries extending core classes (such as ActiveSupport).
 require 'ecraft/extensions/bigdecimal'
 require 'ecraft/extensions/date'
+require 'ecraft/extensions/datetime'
+require 'ecraft/extensions/ostruct'
