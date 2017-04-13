@@ -5,7 +5,7 @@ describe Date do
   describe '#to_json' do
     it 'should serialize the time in yyyy-mm-ddTHH:MM:SS+Z form' do
       json = { 'time' => Time.new(2000, 1, 1) }.to_json
-      expect(json).to eq '{\"time\":\"2000-01-01T00:00:00+02:00\"}'
+      expect(json).to eq '{"time":"2000-01-01T00:00:00+02:00"}'
     end
   end
 
