@@ -17,7 +17,7 @@ describe String do
   end
 
   describe '#to_class' do
-    it 'it should convert a string to the corresponding Class or Module' do
+    it 'converts a string to its corresponding Class or Module' do
       class FooBar
       end
       expect('FooBar'.to_class).not_to eq nil
