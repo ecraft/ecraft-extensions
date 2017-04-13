@@ -38,8 +38,6 @@ class ::String
     nil
   end
 
-  # require 'facets/string/roman' # You may or may not have the `require` in your code from before.
-  # 'true'.to_b # result: true
   def to_bool
     !self !~ /^(true|t|yes|y|1)$/i
   end
