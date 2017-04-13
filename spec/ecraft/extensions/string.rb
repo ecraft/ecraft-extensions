@@ -5,7 +5,6 @@ describe String do
   describe '#to_camelcase' do
     it 'should camelcase a string' do
       camelcase_string = 'foo_bar'.to_camelcase
-      pp camelcase_string
       expect(camelcase_string).to eq 'FooBar'
     end
   end
@@ -18,7 +17,7 @@ describe String do
   end
 
   describe '#to_class' do
-    it 'should snake case a string' do
+    it 'it should convert a string to the corresponding Class or Module' do
       class FooBar
       end
       expect('FooBar'.to_class).not_to eq nil

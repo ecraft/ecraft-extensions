@@ -2,8 +2,10 @@ class ::String
   # These methods should not be used in new code
   # Instead use https://github.com/ecraft/ecraft.uxfactory.server/blob/master/documentation/upgrading-from-facets.md
 
-  # require 'facets/string/camelcase' # You may or may not have the `require` in your code from before.
-  # 'facets_string'.camelcase(:upper) # result: "FacetsString"
+  # require 'active_support'
+  # require 'active_support/core_ext/string/inflections'
+  #
+  # 'active_support_string'.camelize # result: "ActiveSupportString"
   def to_camelcase
     separators = ['_', '\s']
     str = dup
@@ -14,8 +16,10 @@ class ::String
     str
   end
 
-  # require 'facets/string/snakecase' # You may or may not have the `require` in your code from before.
-  # 'FacetsString'.snakecase # result: "facets_string"
+  # require 'active_support'
+  # require 'active_support/core_ext/string/inflections'
+  #
+  # 'ActiveSupportString'.underscore # result: "active_support_string"
   def to_snake_case
     gsub(/\B[A-Z]/, '_\&').downcase
   end

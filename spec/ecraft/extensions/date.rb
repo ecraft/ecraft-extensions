@@ -1,4 +1,4 @@
-require 'json'
+require 'json/add/core'
 require 'ecraft/extensions/date'
 
 describe Date do
