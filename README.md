@@ -46,14 +46,6 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/ecraft/extensions. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
 
-### Releasing a new version
-
-1. `git checkout master && git pull` in your local working copy.
-1. Update the `lib/ecraft/extensions/version.rb` file with the new version number.
-1. `git release v<version>` (replace with the version number you specified above, with v prefix.)
-1. `git push fury master`
-1. Go to the [Releases](https://github.com/ecraft/ecraft-extensions/releases) page and add the changelog. Use [changelog-rs](https://github.com/perlun/changelog-rs) for generating it.
-
 ### Documentation
 
 We strive to write documentation inline in [YARD](http://yardoc.org) format.
@@ -64,3 +56,7 @@ bundle exec yard server -r
 ```
 
 Check the locally served documentation at http://localhost:8808/
+
+### License
+
+MIT
