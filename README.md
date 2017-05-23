@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/ecraft/ecraft-extensions.svg?token=BUqjqARNkptMDoMbPtFS&branch=master)](https://travis-ci.com/ecraft/ecraft-extensions)
+[![Build Status](https://travis-ci.org/ecraft/ecraft-extensions.svg?branch=master)](https://travis-ci.org/ecraft/ecraft-extensions)
 
 # Ecraft::Extensions
 
