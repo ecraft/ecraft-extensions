@@ -1,3 +1,6 @@
+require 'json'
+require 'json/add/core'
+
 class ::Time
   def as_ms
     to_i * 1000 + usec / 1000
