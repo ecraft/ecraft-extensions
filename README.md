@@ -4,6 +4,8 @@
 
 This code contains some useful extension methods to various Ruby classes.
 
+It also contains a few mixins in the `Ecraft::Extensions::Mixins` module.
+
 ## Installation
 
 Add this line to your application's Gemfile:
