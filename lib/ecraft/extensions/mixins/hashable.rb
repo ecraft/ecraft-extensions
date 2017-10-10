@@ -3,6 +3,9 @@
 #
 # Similar to https://github.com/mustafaturan/hashable, but different in implementation.
 #
+# This mixin is deprecated, since it changes the behavior of to_h in a potentially unpleasant and surprising way for developers.
+# It should only be used to make legacy code run and work; it should preferably not be used for new code being written.
+#
 
 require 'active_support'
 require 'active_support/core_ext/hash/keys'
@@ -92,7 +95,7 @@ module Ecraft
             else
               map_enumerable(original) if original.respond_to?(:each)
               value = original.to_h if original.respond_to?(:to_h)
-              value.rstrip! if value.respond_to?(:rstrip!)
+              value.rstrip! if value.respond_to?(:rstrip!) && !value.frozen?
             end
 
             hash[var.to_s.delete('@').to_sym] = value
