@@ -2,6 +2,9 @@ AllCops:
   TargetRubyVersion: 2.3
   DisplayCopNames: true
 
+Layout/MultilineOperationIndentation:
+  EnforcedStyle: indented
+
 Lint/EndAlignment:
   EnforcedStyleAlignWith: variable
 
@@ -21,14 +24,12 @@ Style/BlockDelimiters:
 Style/ClassAndModuleChildren:
   Enabled: false
 
+Style/DateTime:
+  Enabled: false
 Style/Documentation:
   Enabled: false
 Style/Encoding:
   Enabled: false
-Style/FileName:
-  Enabled: false
-Style/MultilineOperationIndentation:
-  EnforcedStyle: indented
 Style/NumericPredicate:
   Enabled: false
 Style/FrozenStringLiteralComment:
