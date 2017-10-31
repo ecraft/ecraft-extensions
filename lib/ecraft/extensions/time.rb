@@ -7,6 +7,9 @@ class ::Time
   end
 
   def to_json(*_a)
-    iso8601.to_json
+    # Use the precision provided in our receiver, but only up to milliseconds at max. Objects lacking the fraction part
+    # altogether will be serialized without fraction part using this algorithm.
+    fraction_digits = [nsec.to_s.sub(/0+$/, '').length, 3].min
+    iso8601(fraction_digits).to_json
   end
 end
