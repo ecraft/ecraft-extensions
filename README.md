@@ -59,6 +59,23 @@ bundle exec yard server -r
 
 Check the locally served documentation at http://localhost:8808/
 
+### Releasing a new version
+
+- Bump the version in `version.rb`
+- Create the tag:
+
+  ```
+  $ git release v1.0.x`
+  ```
+
+- Build the gemfile and push it to Rubygems.org:
+
+  ```shell
+  $ bundle exec rake build release
+  ```
+
+- Generate the changelog (`cargo install changelog-rs && changelog-rs .`) and copy the relevant lines to [the releases page](https://github.com/ecraft/ecraft-extensions/releases).
+
 ### License
 
 MIT
