@@ -9,8 +9,16 @@ Bundler.require
 $LOAD_PATH << "./lib"
 
 require 'ecraft/extensions'
-require 'ecraft/extensions/all'
+require 'ecraft/extensions/bigdecimal'
+require 'ecraft/extensions/date'
+require 'ecraft/extensions/datetime'
+require 'ecraft/extensions/ostruct'
+require 'ecraft/extensions/string'
+require 'ecraft/extensions/time'
 
-puts "<#{$PROGRAM_NAME}> Starting IRB with ecraft/extensions/all"
+puts "<#{$PROGRAM_NAME}> Starting IRB with each file in ecraft/extensions/ required"
+puts
+puts "<#{$PROGRAM_NAME}> To try the mixin, require 'ecraft/extensions/mixins/hashable'"
+
 
 IRB.start
