@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+
+echo "<$0> Installing prerequisites..."
+
+which bundler || gem install bundler
+bundle check || bundle install
+
+echo "<$0> Done installing prerequisites!"
+echo
+echo "Explore this library using bin/console - an IRB with lib/ in the \$LOAD_PATH and this library required."
+echo

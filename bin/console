@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+require "irb"
+require "irb/completion" # easy tab completion
+
+require "bundler/setup"
+Bundler.require
+
+$LOAD_PATH << "./lib"
+
+require 'ecraft/extensions'
+require 'ecraft/extensions/all'
+
+puts "<#{$PROGRAM_NAME}> Starting IRB with ecraft/extensions/all"
+
+IRB.start
