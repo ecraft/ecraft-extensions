@@ -20,5 +20,4 @@ puts "<#{$PROGRAM_NAME}> Starting IRB with each file in ecraft/extensions/ requi
 puts
 puts "<#{$PROGRAM_NAME}> To try the mixin, require 'ecraft/extensions/mixins/hashable'"
 
-
 IRB.start
