@@ -30,6 +30,11 @@ Style/Documentation:
   Enabled: false
 Style/Encoding:
   Enabled: false
+
+# Pending a Rubocop release with https://github.com/bbatsov/rubocop/issues/5245 included.
+Style/FormatStringToken:
+  Enabled: false
+
 Style/NumericPredicate:
   Enabled: false
 Style/FrozenStringLiteralComment:
