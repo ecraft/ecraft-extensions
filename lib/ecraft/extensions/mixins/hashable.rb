@@ -47,13 +47,13 @@ module Ecraft
           end
         end
 
-        def value_type?(v)
-          v.is_a?(BigDecimal) ||
-            v.is_a?(Integer) ||
-            v.is_a?(Float) ||
-            v.is_a?(String) ||
-            v.is_a?(TrueClass) ||
-            v.is_a?(FalseClass)
+        def value_type?(value)
+          value.is_a?(BigDecimal) ||
+            value.is_a?(Integer) ||
+            value.is_a?(Float) ||
+            value.is_a?(String) ||
+            value.is_a?(TrueClass) ||
+            value.is_a?(FalseClass)
         end
 
         def strip_string_recurse_enumerable_values(hash)

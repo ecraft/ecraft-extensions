@@ -23,7 +23,7 @@ class ::BigDecimal
   # Values without any fraction digits will use `Fixnum` form, where values with a fractional part will use `Float` form.
   #
   # @return [String]
-  def to_json(*_a)
+  def to_json(*_args)
     to_s
   end
 
@@ -31,14 +31,14 @@ class ::BigDecimal
   #
   # Values without any fraction digits will use `Fixnum` form, where values with a fractional part will use `Float` form.
   #
-  # @param s [String] The format that should be used for the conversion. If provided, the original `to_s` implementation will be
-  #   called using this parameter to provide the same semantics as the original method.
+  # @param string_format [String] The format that should be used for the conversion. If provided, the original `to_s`
+  #   implementation will be called using this parameter to provide the same semantics as the original method.
   # @return [String]
-  def to_s(s = nil)
-    if s.nil?
+  def to_s(string_format = nil)
+    if string_format.nil?
       to_s_original('F').gsub(/\.0$/, '')
     else
-      to_s_original(s)
+      to_s_original(string_format)
     end
   end
 end
