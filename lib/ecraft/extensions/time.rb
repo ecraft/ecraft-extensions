@@ -1,5 +1,6 @@
 require 'json'
 require 'json/add/core'
+require 'time'
 
 class ::Time
   def as_ms
