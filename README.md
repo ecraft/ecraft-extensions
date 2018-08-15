@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/ecraft/ecraft-extensions.svg?branch=master)](https://travis-ci.org/ecraft/ecraft-extensions)
+[![Build Status](https://travis-ci.org/ecraft/ecraft-extensions.svg?branch=master)](https://travis-ci.org/ecraft/ecraft-extensions) [![Gem Version](https://badge.fury.io/rb/ecraft-extensions.svg)](https://badge.fury.io/rb/ecraft-extensions)
 
 # Ecraft::Extensions
 
