@@ -28,7 +28,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'guard-rspec', '~> 4.7'
   spec.add_development_dependency 'rake'
   spec.add_development_dependency 'rspec'
-  spec.add_development_dependency 'rubocop', '~> 0.51'
+  spec.add_development_dependency 'rubocop', '~> 1.5'
   spec.add_development_dependency 'simplecov'
   spec.add_development_dependency 'yard'
 end
