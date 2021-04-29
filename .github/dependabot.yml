@@ -1,0 +1,23 @@
+version: 2
+registries:
+  rubygems-server-gem-fury-io-ecraft-gems:
+    type: rubygems-server
+    url: https://gem.fury.io/ecraft-gems
+    token: "${{secrets.RUBYGEMS_SERVER_GEM_FURY_IO_ECRAFT_GEMS_TOKEN}}"
+
+updates:
+- package-ecosystem: bundler
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "07:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: rubocop
+    versions:
+    - 1.10.0
+    - 1.11.0
+    - 1.12.0
+    - 1.9.0
+  registries:
+  - rubygems-server-gem-fury-io-ecraft-gems
