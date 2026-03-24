@@ -13,6 +13,6 @@ class ::String
   end
 
   def to_bool
-    !self !~ /^(true|t|yes|y|1)$/i
+    /^(true|t|yes|y|1)$/i.match?(self)
   end
 end
